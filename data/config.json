@@ -1,0 +1,32 @@
+{
+  "game": {
+    "title": "人生百年",
+    "subtitle": "从呱呱坠地到百年归去",
+    "slogan": "每一个选择，都书写着独特的人生"
+  },
+  "stages": [
+    { "id": "birth", "name": "出生", "age": "0岁" },
+    { "id": "infant", "name": "幼儿", "age": "0-3岁" },
+    { "id": "childhood", "name": "童年", "age": "3-12岁" },
+    { "id": "youth", "name": "少年", "age": "12-18岁" },
+    { "id": "young", "name": "青年", "age": "18-30岁" },
+    { "id": "prime", "name": "壮年", "age": "30-45岁" },
+    { "id": "middle", "name": "中年", "age": "45-60岁" },
+    { "id": "elderly", "name": "老年", "age": "60-75岁" },
+    { "id": "final", "name": "晚年", "age": "75-100岁" },
+    { "id": "ending", "name": "终章", "age": "百年" }
+  ],
+  "attrs": {
+    "iq": { "name": "智商", "min": 0, "max": 100, "default": 50 },
+    "eq": { "name": "情商", "min": 0, "max": 100, "default": 50 },
+    "health": { "name": "体质", "min": 0, "max": 100, "default": 50 },
+    "family": { "name": "家境", "min": 0, "max": 100, "default": 50 },
+    "social": { "name": "人脉", "min": 0, "max": 100, "default": 50 },
+    "luck": { "name": "运气", "min": 0, "max": 100, "default": 50 }
+  },
+  "guide": [
+    { "icon": "👶", "title": "全新人生", "text": "你将从一个婴儿开始，经历人生的每一个阶段。每个选择都会影响你的属性和命运。" },
+    { "icon": "🎯", "title": "做出选择", "text": "在每个人生节点，你会面临2-3个选择。不同选择会通往不同的人生道路。" },
+    { "icon": "📖", "title": "书写人生", "text": "探索所有可能的人生轨迹，从平凡到伟大，从贫穷到富有，从孤独到幸福。" }
+  ]
+}

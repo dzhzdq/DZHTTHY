@@ -1,0 +1,100 @@
+{
+  "start": {
+    "stage": "birth",
+    "text": "你出生在一个普通的家庭。护士轻轻拍打你的背部，你发出了来到这个世界的第一声啼哭。窗外阳光明媚，仿佛在欢迎你的到来。",
+    "image": "https://images.unsplash.com/photo-1477007264460-0b1d0a3b7c8d?w=800",
+    "choices": [
+      { "text": "安静地睁开眼睛，好奇地打量这个世界", "attrs": { "iq": 2 }, "next": "childhood_1" },
+      { "text": "大声啼哭，表达对这个陌生世界的不满", "attrs": { "eq": 2 }, "next": "childhood_2" }
+    ]
+  },
+  "childhood_1": {
+    "stage": "childhood",
+    "text": "你的童年在书香中度过。父母都是教师，家里堆满了各种书籍。你从小就对知识充满渴望，总是缠着大人讲故事。",
+    "image": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800",
+    "choices": [
+      { "text": "每天放学后都泡在图书馆，如饥似渴地阅读", "attrs": { "iq": 5 }, "next": "youth_scholar" },
+      { "text": "虽然喜欢书，但更渴望去户外玩耍", "attrs": { "health": 3, "social": 2 }, "next": "youth_sports" },
+      { "text": "把书中的故事讲给邻居小朋友听", "attrs": { "social": 4, "eq": 2 }, "next": "youth_social" }
+    ]
+  },
+  "childhood_2": {
+    "stage": "childhood",
+    "text": "你从小就展现出非凡的表达能力。能说会道的你很快成为了小区里的\"孩子王\"，邻居们都说你是个\"小大人\"。",
+    "image": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800",
+    "choices": [
+      { "text": "经常组织小伙伴们一起玩游戏", "attrs": { "social": 5, "eq": 3 }, "next": "youth_leader" },
+      { "text": "利用口才优势，在学校演讲比赛中屡屡获奖", "attrs": { "eq": 5, "iq": 2 }, "next": "youth_debate" },
+      { "text": "开始学习乐器，用音乐表达情感", "attrs": { "eq": 3, "iq": 2 }, "next": "youth_art" }
+    ]
+  },
+  "youth_scholar": {
+    "stage": "youth",
+    "text": "你以优异的成绩考入了重点中学。班主任对你寄予厚望，认为你有可能成为下一个高考状元。你也暗暗下定决心，要用知识改变命运。",
+    "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800",
+    "choices": [
+      { "text": "全身心投入学习，放弃所有娱乐活动", "attrs": { "iq": 8, "health": -3 }, "next": "young_study" },
+      { "text": "在学习之余，参加学科竞赛拓宽视野", "attrs": { "iq": 5, "social": 3 }, "next": "young_competition" },
+      { "text": "开始思考学习的意义，不想做\"书呆子\"", "attrs": { "eq": 4, "social": 4 }, "next": "young_confused" }
+    ]
+  },
+  "youth_sports": {
+    "stage": "youth",
+    "text": "阳光、操场、汗水——你的青春在运动中绽放。你加入了校篮球队，结识了一群志同道合的伙伴。教练说你有成为职业运动员的潜质。",
+    "image": "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800",
+    "choices": [
+      { "text": "更加努力训练，争取进入省队", "attrs": { "health": 8, "iq": -2 }, "next": "young_athlete" },
+      { "text": "在运动和学习之间寻找平衡", "attrs": { "health": 5, "iq": 3 }, "next": "young_balance" },
+      { "text": "开始思考运动员职业的局限性", "attrs": { "eq": 3, "social": 4 }, "next": "youth_think" }
+    ]
+  },
+  "youth_social": {
+    "stage": "youth",
+    "text": "你是个天生的社交达人。朋友遍布年级每个班，甚至和其他学校的学生也有来往。老师欣赏你的能力，让你担任学生会主席。",
+    "image": "https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=800",
+    "choices": [
+      { "text": "利用人脉资源，开始尝试小生意", "attrs": { "social": 6, "family": 3 }, "next": "young_business" },
+      { "text": "专心学生会工作，为同学们服务", "attrs": { "eq": 5, "social": 4 }, "next": "young_leader2" },
+      { "text": "平衡社交和学习，成绩同样优秀", "attrs": { "iq": 4, "eq": 4 }, "next": "young_balance2" }
+    ]
+  },
+  "youth_leader": {
+    "stage": "youth",
+    "text": "你的领导能力在中学时代就已显露无疑。同学们遇到问题都会找你帮忙，老师也经常让你组织班级活动。你享受这种感觉。",
+    "image": "https://images.unsplash.com/photo-1529390079861-591de354faf5?w=800",
+    "choices": [
+      { "text": "竞选学生会主席，带领更多同学", "attrs": { "eq": 5, "social": 5 }, "next": "young_president" },
+      { "text": "开始创业尝试，卖起了复习资料", "attrs": { "social": 4, "family": 4 }, "next": "young_entrepreneur" },
+      { "text": "专注于学业，为高考做准备", "attrs": { "iq": 5, "eq": 2 }, "next": "young_study2" }
+    ]
+  },
+  "youth_debate": {
+    "stage": "youth",
+    "text": "辩论赛让你找到了展现自我的舞台。你思维敏捷、表达流畅，在一次次的唇枪舌剑中不断成长，甚至获得了省级比赛冠军。",
+    "image": "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800",
+    "choices": [
+      { "text": "立志成为律师，在法庭上继续辩论", "attrs": { "iq": 5, "eq": 5 }, "next": "young_lawyer" },
+      { "text": "参加辩论社，结识更多志同道合的朋友", "attrs": { "social": 5, "eq": 4 }, "next": "young_friend" },
+      { "text": "开始主持学校活动，向主持人方向发展", "attrs": { "eq": 6, "social": 3 }, "next": "young_host" }
+    ]
+  },
+  "youth_art": {
+    "stage": "youth",
+    "text": "音乐成为了你最好的朋友。无论是钢琴还是吉他，你都能很快上手。学校文艺汇演上，你的表演总能让观众惊叹。",
+    "image": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800",
+    "choices": [
+      { "text": "决定走音乐专业道路，报考音乐学院", "attrs": { "eq": 5, "iq": -3 }, "next": "young_music" },
+      { "text": "把音乐作为爱好，主攻学业", "attrs": { "iq": 4, "eq": 4 }, "next": "young_balance3" },
+      { "text": "组建乐队，开始在校外演出", "attrs": { "social": 5, "eq": 4 }, "next": "young_band" }
+    ]
+  },
+  "youth_think": {
+    "stage": "youth",
+    "text": "你开始思考人生的意义。也许运动员的职业生涯很短，不如趁年轻多学点东西，为未来做准备。",
+    "image": "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=800",
+    "choices": [
+      { "text": "边训练边学习，备战高考", "attrs": { "iq": 4, "health": -2 }, "next": "young_balance" },
+      { "text": "退役后去读体育大学", "attrs": { "health": 5, "eq": 2 }, "next": "middle_athlete_scholar" }
+    ]
+  }
+}
